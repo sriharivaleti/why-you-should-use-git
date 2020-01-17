@@ -1,0 +1,25 @@
+{
+    "name": "setup-github",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "mdx-deck deck.mdx",
+        "build": "mdx-deck deck.mdx",
+        "pdf": "mdx-deck pdf deck.mdx",
+        "image": "mdx-deck screenshot deck.mdx",
+        "help": "mdx-deck",
+        "clean": "rm -rf dist",
+        "copy": "cp style.css dist",
+        "deploy": "gh-pages -d dist"
+    },
+    "keywords": [],
+    "author": "Maria D. Campbell",
+    "license": "MIT",
+    "devDependencies": {
+        "mdx-deck": "^3.0.13"
+    },
+    "dependencies": {
+        "gh-pages": "^2.2.0"
+    }
+}
