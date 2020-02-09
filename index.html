@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>An Intro to Git and Github and Why You Should Git</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="section">
+                <h2 class="capitalize">An Intro to Git and Github</h2>
+                <p class="capitalize">and Why You Should Git</p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Why Git and Github?</h2>
+                <p><code>Git</code>, a <strong>Distributed Version Control System</strong>,
+                    is very flexible, smart, and intuitive. it is also an <strong>industry standard</strong> among
+                    <code>developers</code> and
+                    <code>designers</code>.</p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">What is Github?</h2>
+                <p><strong>Github</strong> provides hosting for <code>software
+                        development</code> <strong>version control</strong> using <code>Git</code>. It is a
+                    <em><strong>subsidiary</strong></em>
+                    of <strong>Microsoft</strong>,
+                    which
+                    <em><strong>acquired</strong></em> <strong>Github</strong> in
+                    2018 for $7.5 billion. It offers all of the <code>distributed version control</code> and
+                    <code>source
+                        code management</code>
+                    functionality of <code>Git</code> as well as adding its own features. It is probably the most
+                    <em><strong>accessibly social</strong></em>
+                    and most widely used <code>Git</code> hosting provider.</p>
+            </section>
+            <section class="section">
+                <h2 class="capitalizes">Short History of Git</h2>
+                <p>
+                    <code>Git</code> was <em><strong>created</strong></em> in 2005 by <strong>Linus Torvalds</strong>
+                    for the development
+                    of the <code>Linux
+                        kernel</code>.
+                </p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">The Linux kernel</h2>
+                <p>
+                    The <code>Linux kernel</code> is the main component of the <code>Linux</code> operating system
+                    (<strong>OS</strong>)
+                    and
+                    the core interface between a computer's hardware and its processes. It
+                    communicates between the two, managing resources as efficiently as possible.
+                </p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">The Linux kernel is Open Source</h2>
+                <p>
+                    The <code>Linux kernel</code> is a large <strong>open source</strong>. During most of the time that
+                    the
+                    <code>Linux kernel</code> was maintained (1992-2002), <em><strong>changes</strong></em> to the
+                    <strong>software</strong> were passed
+                    around as <code>patches</code> and <code>archived files</code>. In 2002, the kernel project began
+                    using
+                    a <em><strong>proprietary</strong></em> <strong>Distributed Version Control System</strong> (DVCS)
+                    called <code>Bitkeeper</code>.
+                </p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Relationship broken between Linux kernel Community and Bitkeeper</h2>
+                <p>
+                    In 2005, the relationship between the community that developed the <code>Linux
+                        kernel</code> and the commercial company that developed <code>Bitkeeper</code> broke down, and
+                    the
+                    tool's <em><strong>free of charge</strong></em> status was revoked. This got <strong>Linus
+                        Torvalds</strong> to
+                    create
+                    his <strong>own tool</strong> based on what he learned from working with <code>BitKeeper</code>.
+                </p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Goals</h2>
+                <p>Some of his <em><strong>goals</strong></em> in creating this <code>new tool</code> were:</p>
+                <ul>
+                    <li>Speed</li>
+                    <li>Simple design</li>
+                    <li>Strong support for non-linear development (thousands of parallel branches)</li>
+                    <li>Fully distributed</li>
+                    <li>Able to handle large projects like the Linux kernel efficiently (speed and data size)</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Git easy to use while retaining original qualities</h2>
+                <p>Since 2005, <code>Git</code> has evolved into an easy to use tool and
+                    still retains these original qualities <strong>Linus Torvalds</strong> sought to achieve. It is very
+                    fast, efficient
+                    with large projects, and has an incredible <strong>branching system</strong> for <strong>non-linear
+                        development</strong>.</p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Centralized vs Distributed Version Control</h2>
+                <p>So what is <strong><em>centralized</em></strong> version control,
+                    <em><strong>distributed</strong></em>
+                    version control, and why use <code>distributed </code>version control such as <code>Git</code>
+                    <em><strong>instead</strong></em>?</p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Centralized Version Control</h2>
+                <p>A <em><strong>centralized</strong></em> version control system works on a
+                    <code>client-server</code> model.</p>
+                <p>There is a <em><strong>single</strong></em>, <em><strong>centralized</strong></em>, <strong>master
+                        copy</strong> of
+                    the <code>code
+                        base</code>, and <em><strong>pieces</strong></em>
+                    of the <code>code</code> that developers are working on are typically
+                    <em><strong>locked</strong></em>, or <em><strong>checked out</strong></em>, so
+                    that ONLY <strong>one
+                        developer</strong> is
+                    allowed to work on that part of the <code>code</code> at any one time.</p>
+
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Centralize Version Control: Access to the <code>code base</code></h2>
+                <p><em><strong>Access</strong></em> to the <code>code base</code> and <code>lock down</code> is
+                    <em><strong>controlled</strong></em> by
+                    the <strong>server</strong>. When the developer checks their code back in, the <code>lock
+                        down</code> is
+                    <em><strong>released</strong></em>,
+                    so it's
+                    <strong>available</strong> to other <strong>developers</strong> to <em><strong>check
+                            out</strong></em>.
+                </p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Version Control: Key part</h2>
+                <p>A <em><strong>key</strong></em> <strong>part</strong> of any <code>Version Control System
+                    </code>(<strong>VCS</strong>) is the
+                    ability to <strong><em>keep track</em></strong> of <code>changes</code> that are made to the
+                    <code>code</code>.
+                    When a piece
+                    is checked in, a <em><strong>new
+                            version</strong></em> of that <code>piece</code> is created and entered or
+                    <code>logged</code>.</p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Version Control: New Version</h2>
+                <p>When everyone has finished working on their <em><strong>own</strong></em> piece(s)
+                    of the whole, and it's time for a <strong>new release</strong> (<code>version</code>) of the
+                    application, a
+                    <em><strong>new</strong></em>
+                    version is
+                    <strong>created</strong>. That usually means entering the version numbers of all the parts that make
+                    up the
+                    application to make <em><strong>that</strong></em> <code>version</code> of the application.</p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Best known Centralized Version Control Systems</h2>
+                <p>Best known <strong>Centralized Version Control Systems</strong> are <a
+                        href="https://en.wikipedia.org/wiki/Concurrent_Versions_System" target="_blank">Concurrent
+                        Version System</a>,
+                    and <a href="https://en.wikipedia.org/wiki/Apache_Subversion" target="_blank">Apache Subversion</a>.
+                </p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Best known Distributed version Control Systems</h2>
+                <p>The best known <strong>Distributed version Control Systems</strong> are <a
+                        href="https://en.wikipedia.org/wiki/Git" target="_blank">Git</a> and <a
+                        href="https://en.wikipedia.org/wiki/Mercurial" target="_blank">Mercurial</a>. We
+                    will be focusing on <code>Git </code>in this
+                    course, as it is the most popular to use and an <em><strong>industry
+                            standard</strong></em>.</p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Differences between <code>CVCS</code> and <code>DVCS</code></h2>
+                <ul>
+                    <li>There is no <em><strong>lockdown</strong></em> of <code>code</code> in a <code>DVCS</code>.</li>
+                    <li>What does this mean? More than one developer, in fact any
+                        number of
+                        developers, can be working on the code at any given time.</li>
+                    <li>Every <strong>set</strong> of <em><strong>new changes</strong></em> that a developer
+                        <strong>makes</strong> to
+                        the
+                        <code>code</code> contains <em><strong>all</strong></em>
+                        the <strong>history</strong> of the <code>code</code> at the point in
+                        <em><strong>time</strong></em> he or she grabbed it
+                        from the
+                        <strong>remote repository</strong> and
+                        the
+                        <em><strong>new</strong></em> <code>history</code>
+                        created from the <em><strong>new</strong></em> <code>changes</code> he or she makes
+                        <code>locally</code>.
+                    </li>
+                    <li>In other words, each developer has his/her own <code>copy</code>
+                        of the <em><strong>complete
+                                project</strong></em> in its <code>current state </code>at the time each developer grabs
+                        a <code>copy</code> or
+                        <em><strong>clones</strong></em> it <code>locally</code>,
+                        meaning to their <strong>desktop</strong>.
+                    </li>
+                    <li>When they are done with their changes, they <strong>don't</strong>
+                        have to <em><strong>wait</strong></em> for the
+                        last person who checked out the code to check it back in as with <code>CVC</code>. They can
+                        simply check it
+                        back in, or rather,
+                        <em><strong>push</strong></em> it to <code>remote</code> whenever they want. This has
+                        <strong>certain
+                            implications</strong>
+                        which I will discuss a bit
+                        later.</li>
+                    <li>The <em><strong>performance</strong></em> of <code>DVCS</code> is better. There is no
+                        <strong>waiting</strong> for <em><strong>lockdowns</strong></em> to
+                        be <strong>unlocked</strong> across potentially <strong>slow networks</strong> or
+                        <strong>networks</strong> which
+                        <strong><em>aren't online</em></strong> at
+                        all. In
+                        addition, as mentioned
+                        previously, the <code>complete code</code> as it's represented remotely at a given time, is on
+                        each
+                        developer's <code>local system</code>.</li>
+                    <li><code>Branching</code> and <code>merging</code> of <em><strong>repositories</strong></em> is
+                        much easier
+                        to achieve in a <code>DVCS</code>
+                        because they are built into the system itself. We will see practical application of that when we
+                        set ourselves up
+                        with <code>Git</code> and <strong>Github</strong> and <em><strong>push</strong></em> our project
+                        from from our <code>local
+                            computer</code> to <em><strong>remote</strong></em>.
+                    </li>
+                    <li>With a <code>DVCS</code>, you <em><strong>don't need</strong></em> to be
+                        <strong>connected</strong> to a
+                        <code>network</code> all the time.
+                        Only when you want to view your changes via <code>localhost</code>. I'll explain that as well
+                        via demonstration.</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">CVCS PROs</h2>
+                <ul>
+                    <li><code>CVCS</code> are purportedly <em><strong>easier</strong></em> to understand. I have never
+                        worked with one, so I personally can't attest to that.</li>
+                    <li><strong>Access control</strong> is easier, since everything is
+                        <em><strong>controlled</strong></em> from <code>one place</code>.
+                        That CAN be true.</li>
+                    <li>This really <em><strong>pertains to</strong></em> the <code>potential</code> for
+                        <em><strong>conflicts</strong></em>
+                        that arise when
+                        developers <code>independently</code> try to <em><strong>push</strong></em> (merge) their
+                        <code>changes</code> to a project to <em><strong>remote</strong></em>.
+                    </li>
+                    <li>This happens when developers are working on the same
+                        code piece and have
+                        two different <code>versions</code> of that piece.</li>
+                    <li>This of course is not possible. There can only be ONE
+                        version. </li>
+                    <li>They have to <em><strong>choose</strong></em> between the <code>two</code>. </li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Which version is better?</h2>
+                <p>Which version is <em><strong>better</strong></em>? This is when some
+                    orchestration of <code>Git</code> <em><strong>commits</strong></em> and
+                    <em><strong>merging</strong></em> of <code>code</code>
+                    to the
+                    <em><strong>remote</strong></em> <code>master
+                        branch</code> have to come into play.</p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize"><code>CVC</code> vs <code>DVC</code>: differences</h2>
+                <p>With <code>CVCS</code>, you don't have to <em><strong>merge</strong></em> <code>different
+                        versions</code> of
+                    the <em><strong>same code</strong></em> unless you explicitly want to, so you avoid the
+                    <em><strong>trickiness</strong></em>
+                    of <strong>merging</strong> in <code>DVCS</code>.</p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">So <em><strong>why</strong></em> <code>Git</code>, then?</h2>
+                <p>Where Git might take a bit longer to <code>get</code>
+                    than a <code>CVCS</code>, in the <em><strong>long</strong></em> run, it is very flexible, smart, and
+                    intuitive compared to
+                    <code>CVCS</code>.</p>
+            </section>
+            <section class="section">
+                <h2 class="capitalize">Git Isn't Just For Developers</h2>
+                <p>
+                    <em><strong>Lastly</strong></em>, I came across a <em><strong>great article</strong></em> on
+                    <strong>Medium</strong>
+                    that sums up why <code>Git</code> can
+                    be great for
+                    <em><strong>everyone</strong></em>. <em><strong>Not</strong></em>
+                    just <strong>developers</strong>. It's entitled <a
+                        href="https://uiux.blog/designers-who-git-its-worth-it-2cf85877a70b" target="_blank">Designers
+                        who Git. It’s worth it! My experience with incorporating
+                        GIT in my design workflow</a>.
+                </p>
+                <aside class="notes">Go to link and read a bit from the article. </aside>
+            </section>
+            <section class="section">
+                <h2 class="capitalizes">Related Resources</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel">What is the Linux
+                            kernel?</a>: <strong>RedHat</strong>
+                    </li>
+                    <li>
+                        <a href="https://git-scm.com/book/en/v2/">A Short History of Git</a>:
+                        <strong>git-scm.com</strong>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.teamstudio.com/blog/distributed-vs-centralized-version-control-systems-for-lotus-notes">Distributed
+                            vs Centralized Version Control Systems for Lotus Notes</a>: <strong>teamstudio.com</strong>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            hash: true,
+            dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/highlight/highlight.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
